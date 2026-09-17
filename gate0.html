@@ -1,127 +1,232 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gate 0!</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
 </head>
 
-<!-- Header -->
 <body>
+
+    <!-- Header -->
     <header class="hero is-primary">
         <div class="hero-body">
-            <p class="title">Capital title</p>
-            <p class="subtitle">insert subtitle</p>
+            <p class="title">Capital Title</p>
+            <p class="subtitle">Welcome to Title</p>
         </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-menu is-active">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="#about">About</a>
+                    <a class="navbar-item" href="#officials">Officials</a>
+                    <a class="navbar-item" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h1 class="title">About</h1>
+
+                <p>
+                    yes bro
+                </p>
+            </div>
+        </section>
+
+        <!-- Officials Section -->
+        <section id="officials" class="section has-background-light">
+            <div class="container">
+
+                <div class="columns is-multiline">
+
+                    <!-- Official 1 -->
+                    <article class="column is-12-mobile is-4-desktop">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img
+                                        src="https://th.bing.com/th/id/OIP.pjIAb7vKFrUmfYWIf8MmIQHaHa?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Portrait of a person""
+                                        alt="Portrait of me"
+                                    >
+                                </figure>
+                            </div>
+
+                            <div class="card-content">
+                                <p class="title is-4">
+                                    Gojo
+                                </p>
+
+                                <p class="subtitle is-6">
+                                    h
+                                </p>
+
+                                <p>
+                                    does nothing
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Official 2 -->
+                    <article class="column is-12-mobile is-4-desktop">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img
+                                        src="https://i.pinimg.com/originals/86/d5/34/86d534124e2c1eb20ab76efe7af224d0.jpg"
+                                        alt="Portrait of me"
+                                    >
+                                </figure>
+                            </div>
+
+                            <div class="card-content">
+                                <p class="title is-4">
+                                    yea
+                                </p>
+
+                                <p class="subtitle is-6">
+                                    yes
+                                </p>
+
+                                <p>
+                                    Helps nothing.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Official 3 -->
+                    <article class="column is-12-mobile is-4-desktop">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img
+                                        src="https://i.pinimg.com/736x/62/b0/5c/62b05c5a2b4af68ab02670d0e06baa3f.jpg?nii=t"
+                                        alt="Portrait of me"
+                                    >
+                                </figure>
+                            </div>
+
+                            <div class="card-content">
+                                <p class="title is-4">
+                                    Shoko
+                                </p>
+
+                                <p class="subtitle is-6">
+                                    yes bro
+                                </p>
+
+                                <p>
+                                    walang ginagawa
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+
+                <h2 class="title">DON'T Contact Us</h2>
+
+                <form action="#" method="post">
+
+                    <!-- Name -->
+                    <div class="field">
+                        <label class="label" for="name">
+                            NO Full Name
+                        </label>
+
+                        <div class="control">
+                            <input
+                                class="input"
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your full name"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="field">
+                        <label class="label" for="email">
+                            NO Email Address
+                        </label>
+
+                        <div class="control">
+                            <input
+                                class="input"
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="field">
+                        <label class="label" for="message">
+                            NO Message
+                        </label>
+
+                        <div class="control">
+                            <textarea
+                                class="textarea"
+                                id="message"
+                                name="message"
+                                placeholder="Write your message here"
+                                required
+                            ></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="field">
+                        <div class="control">
+                            <button
+                                class="button is-primary"
+                                type="submit"
+                            >
+                                DON'T Submit
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Title</strong> |
+                pls dont come
+            </p>
+        </div>
+    </footer>
+
 </body>
-
-<!-- Navigation -->
-<nav class ="navbar" aria-label="main navigation">
-    <div class="container">
-        <div class = "navbar-menu is-active">
-            <div class="navbar-start">
-                <a class="navbar item" href="#about">About</a>
-                <a class="navbar item" href="#officials">Officials</a>
-                <a class="navbar item" href="#contact">Contact</a>
-            </div>
-        </div>
-    </div>
-</nav>
-
-<!-- Main -->
-<main>
-    <!-- Section -->
-     <section id="about" class="section">
-        <div class="container">
-            <h1 class="title">About</h1>
-            <p>Capital title is a welcoming and practical community</p>
-     </section>
-
-     <section id="officials" class="section has-background-light">
-        <div class="container">
-            <div class="columns is-multiline">
-                <article class="column is-12-mobile is-4-desktop">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="https://th.bing.com/th/id/OIP.pjIAb7vKFrUmfYWIf8MmIQHaHa?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Portrait of a person">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                <p class="title is-4">Shoko-TwT</p>
-                                <p class="subtitle is-6">walang position</p>
-                                <p>yes</p>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="column is-12-mobile is-4-desktop">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="https://i.pinimg.com/originals/86/d5/34/86d534124e2c1eb20ab76efe7af224d0.jpg" alt="Portrait of a person">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                <p class="title is-4">Gojo-uwu</p>
-                                <p class="subtitle is-6">walang position</p>
-                                <p>maybe</p>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="column is-12-mobile is-4-desktop">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="https://i.pinimg.com/736x/62/b0/5c/62b05c5a2b4af68ab02670d0e06baa3f.jpg?nii=t" alt="Portrait of a person">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                <p class="title is-4">Geto-owo</p>
-                                <p class="subtitle is-6">walang position</p>
-                                <p>yoko</p>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </div>
-     </section>
-
-     <section id="contact" class="section">
-        <div class="container">
-            <h2 class="title">DON'T Contact Us</h2>
-            <form action="#" method="post">
-                <div class="field">
-                    <label class="label">Name</label>
-                    <div class="control">
-                        <input class="input" type="text" name="name" placeholder="Enter your name">
-                    </div>
-                </div>
-
-                <div class="field">
-                    <label class="label">Email</label>
-                    <div class="control">
-                        <input class="input" type="email" name="email" placeholder="Enter your email">
-                    </div>
-                </div>
-
-                <div class="field">
-                    <label class="label">Message</label>
-                    <div class="control">
-                        <textarea class="textarea" name="message" placeholder="Enter your message"></textarea>
-                    </div>
-                </div>
-
-                <div class="field is-grouped">
-                    <div class="control">
-                        <button class="button is-link" type="submit">Submit</button>
-                    </div>
-                </div>
-     </section>
-</main>
+</html>
