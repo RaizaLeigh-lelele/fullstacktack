@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barangay Gay | Home</title>
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+</head>
+
+<body>
+    <nav class="navbar is-success" role="navigation">
+        <div class="container">
+
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <strong>Barangay Gay</strong>
+                </a>
+
+                <a role="button" class="navbar-burger" data-target="navbarMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="index.html">
+                        Home
+                    </a>
+
+                    <a class="navbar-item" href="officials.html">
+                        Officials
+                    </a>
+
+                    <a class="navbar-item" href="services.html">
+                        Services
+                    </a>
+
+                    <a class="navbar-item" href="contact.html">
+                        Contact
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="hero is-success is-medium">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+
+                <h1 class="title is-1">
+                    Welcome to Barangay Gay
+                </h1>
+
+                <p class="subtitle">
+                    Serving our community with gay.
+                </p>
+
+                <a href="services.html" class="button is-light is-medium">
+                    View Our Services
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+
+            <h2 class="title has-text-centered">
+                About Our Gay
+            </h2>
+
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content has-text-centered">
+
+                        <p>
+                            Barangay Gay is a community dedicated
+                            to LGBTQ+ individuals.
+                        </p>
+
+                        <p>
+                            This website provides residents with nothing.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section has-background-light">
+        <div class="container">
+            <h2>
+                Quick Links
+            </h2>
+            <div class="columns">
+
+                <div class="column">
+                    <div class="box has-text-centered">
+
+                        <span class="icon is-large">
+                            <i class="fas fa-users fa-2x"></i>
+                        </span>
+
+                        <h3 class="title is-4">
+                            Our Officials
+                        </h3>
+
+                        <p>
+                            Learn more about the barangay captain
+                            and kagawads gayness.
+                        </p>
+
+                        <br>
+
+                        <a href="officials.html" class="button is-success">
+                            View Officials
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="box has-text-centered">
+
+                        <span class="icon is-large">
+                            <i class="fas fa-file-alt fa-2x"></i>
+                        </span>
+
+                        <h3 class="title is-4">
+                            Barangay Services
+                        </h3>
+
+                        <p>
+                            Find information about gay services.
+                        </p>
+
+                        <br>
+
+                        <a href="services.html" class="button is-success">
+                            View Services
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="box has-text-centered">
+
+                        <span class="icon is-large">
+                            <i class="fas fa-phone fa-2x"></i>
+                        </span>
+
+                        <h3 class="title is-4">
+                            Contact Us
+                        </h3>
+
+                        <p>
+                            Find our address.
+                        </p>
+
+                        <br>
+
+                        <a href="contact.html" class="button is-success">
+                            Contact Information
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Barangay Gay</strong>
+            </p>
+
+            <p>
+                Serving our community carefreeness.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const burgers = Array.from(
+                document.querySelectorAll('.navbar-burger')
+            );
+
+            burgers.forEach(burger => {
+
+                burger.addEventListener('click', () => {
+
+                    const target = burger.dataset.target;
+                    const menu = document.getElementById(target);
+
+                    burger.classList.toggle('is-active');
+                    menu.classList.toggle('is-active');
+
+                });
+
+            });
+
+        });
+    </script>
+</body>
+</html>
