@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gate G0 — Barangay Profile (STARTER)</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+
+  
+    <!-- Header -->
+    <header class="hero is-primary">
+        <div class="hero-body">
+            <p class="title">Capital Title</p>
+            <p class="subtitle">Welcome to Title</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-menu is-active">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="#about">About</a>
+                    <a class="navbar-item" href="#officials">Officials</a>
+                    <a class="navbar-item" href="#cart">Cart</a>
+                    <a class="navbar-item" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h1 class="title">About</h1>
+
+                <p>
+                    yes bro
+                </p>
+            </div>
+        </section>
+
+        <!-- Officials Section -->
+        <section id="officials" class="section has-background-light">
+            <div class="container">
+
+                <h2 class="title">Officials</h2>
+
+                <div class="columns is-multiline">
+
+                    <!-- Official 1 -->
+                    <article class="column is-12-mobile is-4-desktop">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img
+                                        src="https://th.bing.com/th/id/OIP.pjIAb7vKFrUmfYWIf8MmIQHaHa?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                                        alt="Portrait of Gojo"
+                                    >
+                                </figure>
+                            </div>
+
+                            <div class="card-content">
+                                <p class="title is-4">Gojo</p>
+                                <p class="subtitle is-6">h</p>
+                                <p>does nothing</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Official 2 -->
+                    <article class="column is-12-mobile is-4-desktop">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img
+                                        src="https://i.pinimg.com/originals/86/d5/34/86d534124e2c1eb20ab76efe7af224d0.jpg"
+                                        alt="Portrait of another official"
+                                    >
+                                </figure>
+                            </div>
+
+                            <div class="card-content">
+                                <p class="title is-4">Yea</p>
+                                <p class="subtitle is-6">Yes</p>
+                                <p>Helps nothing.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Official 3 -->
+                    <article class="column is-12-mobile is-4-desktop">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img
+                                        src="https://i.pinimg.com/736x/62/b0/5c/62b05c5a2b4af68ab02670d0e06baa3f.jpg?nii=t"
+                                        alt="Portrait of Shoko"
+                                    >
+                                </figure>
+                            </div>
+
+                            <div class="card-content">
+                                <p class="title is-4">Shoko</p>
+                                <p class="subtitle is-6">yes bro</p>
+                                <p>walang ginagawa</p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Cart Section -->
+        <section id="cart" class="section">
+            <div class="container">
+
+                <h2 class="title">Sari-sari Cart</h2>
+                <p class="subtitle">Choose your items and quantity!</p>
+
+                <!-- Available Items -->
+                <div class="box">
+
+                    <h3 class="title is-4">Available Products</h3>
+
+                    <div class="field">
+                        <label class="label">Coke 500ml - ₱25</label>
+                        <input class="input" type="number" id="coke" min="0" value="0">
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Lucky Me Pancit - ₱12</label>
+                        <input class="input" type="number" id="pancit" min="0" value="0">
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Skyflakes Crackers - ₱15</label>
+                        <input class="input" type="number" id="skyflakes" min="0" value="0">
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Alaska Evap 370ml - ₱35</label>
+                        <input class="input" type="number" id="alaska" min="0" value="0">
+                    </div>
+
+                    <button class="button is-primary" onclick="printReceipt()">
+                        Calculate Total
+                    </button>
+                </div>
+
+                <!-- Receipt -->
+                <div id="output" class="box">
+                     hhh
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+
+                <h2 class="title">DON'T Contact Us</h2>
+
+                <form action="#" method="post">
+
+                    <!-- Name -->
+                    <div class="field">
+                        <label class="label" for="name">
+                            NO Full Name
+                        </label>
+
+                        <div class="control">
+                            <input
+                                class="input"
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your full name"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="field">
+                        <label class="label" for="email">
+                            NO Email Address
+                        </label>
+
+                        <div class="control">
+                            <input
+                                class="input"
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="field">
+                        <label class="label" for="message">
+                            NO Message
+                        </label>
+
+                        <div class="control">
+                            <textarea
+                                class="textarea"
+                                id="message"
+                                name="message"
+                                placeholder="Write your message here"
+                                required
+                            ></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="field">
+                        <div class="control">
+                            <button
+                                class="button is-primary"
+                                type="submit"
+                            >
+                                DON'T Submit
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Title</strong> |
+                pls dont come
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const items = [
+            { name: 'Coke 500ml', price: 25, id: 'coke' },
+            { name: 'Lucky Me Pancit', price: 12, id: 'pancit' },
+            { name: 'Skyflakes Crackers', price: 15, id: 'skyflakes' },
+            { name: 'Alaska Evap 370ml', price: 35, id: 'alaska' }
+        ];
+
+        // Choosing the items and quantities entered by the customer
+        function chooseItems() {
+            let selectedItems = [];
+
+            for (let item of items) {
+                let quantity = Number(document.getElementById(item.id).value);
+
+                if (quantity > 0) {
+                    selectedItems.push({
+                        name: item.name,
+                        price: item.price,
+                        qty: quantity
+                    });
+                }
+            }
+
+            return selectedItems;
+        }
+
+        // Computing the subtotal of all selected items
+        function computeSubtotal(items) {
+            let total = 0;
+
+            for (let item of items) {
+                total = total + (item.price * item.qty);
+            }
+
+            return total;
+        }
+
+        // Applying a 10% discount if the subtotal exceeds ₱500
+        function applyDiscount(total) {
+            if (total > 500) {
+                return total * 0.9;
+            } else {
+                return total;
+            }
+        }
+
+        // Displaying the receipt and final total
+        function printReceipt() {
+            const selectedItems = chooseItems();
+
+            let receipt = "<h3 class='title is-4'>Receipt</h3>";
+
+            // Displaying each selected item and its subtotal
+            for (let item of selectedItems) {
+                let subtotal = item.price * item.qty;
+
+                receipt += "<p>" + item.name + " - " +
+                    item.qty + " x ₱" + item.price +
+                    " = ₱" + subtotal.toFixed(2) + "</p>";
+            }
+
+            // Computing the subtotal and final total
+            let subtotal = computeSubtotal(selectedItems);
+            let finalTotal = applyDiscount(subtotal);
+
+            receipt += "<hr>";
+            receipt += "<p>Subtotal: ₱" + subtotal.toFixed(2) + "</p>";
+
+            // Showing the discount if the customer qualifies
+            if (subtotal > 500) {
+                receipt += "<p>Discount: 10%</p>";
+            }
+
+            receipt += "<p><strong>Final Total: ₱" +
+                finalTotal.toFixed(2) + "</strong></p>";
+
+            document.getElementById("output").innerHTML = receipt;
+        }
+    </script>
+</body>
+</html>
